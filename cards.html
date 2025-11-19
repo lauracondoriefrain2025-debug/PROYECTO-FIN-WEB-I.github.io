@@ -268,7 +268,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="card">
-                            <div class="demo-img card-img-top" style="height: 200px;">IMG</div>
+                            <img src="https://picsum.photos/400/250?random=30" class="card-img-top" alt="Card imagen superior">
                             <div class="card-body">
                                 <h5 class="card-title">Card con Imagen</h5>
                                 <p class="card-text">La imagen está en la parte superior de la card.</p>
@@ -283,13 +283,13 @@
                                 <p class="card-text">Esta card tiene la imagen en la parte inferior.</p>
                                 <a href="#" class="btn btn-success">Ver más</a>
                             </div>
-                            <div class="demo-img card-img-bottom" style="height: 200px;">IMG</div>
+                            <img src="https://picsum.photos/400/250?random=31" class="card-img-bottom" alt="Card imagen inferior">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card text-white">
-                            <div class="demo-img card-img" style="height: 350px;">IMG</div>
-                            <div class="card-img-overlay">
+                            <img src="https://picsum.photos/400/350?random=32" class="card-img" alt="Card con overlay" style="height: 350px; object-fit: cover;">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(transparent, rgba(0,0,0,0.7));">
                                 <h5 class="card-title">Image Overlay</h5>
                                 <p class="card-text">Texto sobre la imagen usando card-img-overlay.</p>
                                 <a href="#" class="btn btn-light">Acción</a>
@@ -453,8 +453,7 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <div class="demo-img h-100" src="imagen paper/img-01.jpg"  style="min-height: 200px;" >IMG</div>
-                            
+                            <img src="https://picsum.photos/400/300?random=33" class="img-fluid h-100" alt="Card horizontal" style="object-fit: cover;">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -463,6 +462,22 @@
                                 <p class="card-text"><small class="text-muted">Última actualización hace 15 minutos</small></p>
                                 <button class="btn btn-primary">Leer más</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card Horizontal Invertida</h5>
+                                <p class="card-text">También puedes poner la imagen del lado derecho invirtiendo el orden de las columnas.</p>
+                                <p class="card-text"><small class="text-muted">Publicado hace 2 horas</small></p>
+                                <button class="btn btn-success">Explorar</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/400/300?random=34" class="img-fluid h-100" alt="Card horizontal invertida" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -475,7 +490,7 @@
             <div class="example-box">
                 <div class="card-group">
                     <div class="card">
-                        <div class="demo-img card-img-top" style="height: 150px;">IMG 1</div>
+                        <img src="https://picsum.photos/400/200?random=35" class="card-img-top" alt="Card group 1">
                         <div class="card-body">
                             <h5 class="card-title">Card 1</h5>
                             <p class="card-text">Primera card del grupo.</p>
@@ -485,23 +500,85 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="demo-img card-img-top" style="height: 150px;">IMG 2</div>
+                        <img src="https://picsum.photos/400/200?random=36" class="card-img-top" alt="Card group 2">
                         <div class="card-body">
                             <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">Segunda card del grupo con más contenido para mostrar cómo se ajusta la altura.</p>
+                            <p class="card-text">Segunda card del grupo con más contenido para mostrar cómo se ajusta la altura automáticamente.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Hace 5 días</small>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="demo-img card-img-top" style="height: 150px;">IMG 3</div>
+                        <img src="https://picsum.photos/400/200?random=37" class="card-img-top" alt="Card group 3">
                         <div class="card-body">
                             <h5 class="card-title">Card 3</h5>
                             <p class="card-text">Tercera card del grupo.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Hace 1 semana</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards tipo Producto -->
+            <h3 class="mt-5">9️⃣ Cards Estilo Producto</h3>
+            <p>Ejemplo práctico de cards para mostrar productos o servicios.</p>
+
+            <div class="example-box">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://picsum.photos/400/250?random=38" class="card-img-top" alt="Producto 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Producto Premium</h5>
+                                <p class="card-text text-muted">Descripción breve del producto que resalta sus características principales.</p>
+                                <div class="mt-auto">
+                                    <h4 class="text-primary">$99.99</h4>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary">Agregar al Carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">OFERTA</span>
+                            <img src="https://picsum.photos/400/250?random=39" class="card-img-top" alt="Producto 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Producto en Oferta</h5>
+                                <p class="card-text text-muted">Aprovecha esta oferta especial por tiempo limitado.</p>
+                                <div class="mt-auto">
+                                    <h4 class="text-primary">
+                                        <span class="text-decoration-line-through text-muted fs-6">$149.99</span>
+                                        $89.99
+                                    </h4>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-success">Comprar Ahora</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://picsum.photos/400/250?random=40" class="card-img-top" alt="Producto 3">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Producto Estándar</h5>
+                                <p class="card-text text-muted">Excelente relación calidad-precio para uso diario.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-2">
+                                        <span class="text-warning">★★★★☆</span>
+                                        <small class="text-muted">(127 reviews)</small>
+                                    </div>
+                                    <h4 class="text-primary">$49.99</h4>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-outline-primary">Ver Detalles</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -522,6 +599,8 @@
                         <li>✅ Mantén consistencia en el diseño de cards similares</li>
                         <li>✅ Usa <code>.card-group</code> cuando necesites cards del mismo alto</li>
                         <li>✅ Combina con list groups para menús dentro de cards</li>
+                        <li>✅ Agrega <code>.shadow-sm</code> para efectos sutiles de sombra</li>
+                        <li>✅ Usa <code>.h-100</code> para cards de altura completa en grids</li>
                     </ul>
                 </div>
             </div>
