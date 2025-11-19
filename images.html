@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - Bootstrap 5</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container main-container">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>🖼️ IMAGES</h1>
+            <p class="lead">Estilos para imágenes responsivas con Bootstrap 5</p>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    📚 Bootstrap 5
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tables.html">📊 Tables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="images.html">🖼️ Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buttons.html">🔘 Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="badges.html">🏷️ Badges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">📈 Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_groups.html">📝 List Groups</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="cards.html">🃏 Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collapse.html">📂 Collapse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="navbar.html">🧭 Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modals.html">🪟 Modals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">📋 Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">😎 Autor</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header bg-dark text-white">
+                <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="list-group list-group-flush">
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        🏠 <strong>Inicio</strong>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
+                    </div>
+                    
+                    <a href="containers.html" class="list-group-item list-group-item-action">
+                        📦 Containers
+                        <span class="badge bg-primary rounded-pill float-end">Básico</span>
+                    </a>
+                    
+                    <a href="tables.html" class="list-group-item list-group-item-action">
+                        📊 Tables
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="images.html" class="list-group-item list-group-item-action">
+                        🖼️ Images
+                    </a>
+                    
+                    <a href="buttons.html" class="list-group-item list-group-item-action">
+                        🔘 Buttons
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="badges.html" class="list-group-item list-group-item-action">
+                        🏷️ Badges
+                    </a>
+                    
+                    <a href="progress.html" class="list-group-item list-group-item-action">
+                        📈 Progress
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
+                    </div>
+                    
+                    <a href="list_groups.html" class="list-group-item list-group-item-action">
+                        📝 List Groups
+                    </a>
+                    
+                    <a href="cards.html" class="list-group-item list-group-item-action">
+                        🃏 Cards
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="collapse.html" class="list-group-item list-group-item-action">
+                        📂 Collapse
+                    </a>
+                    
+                    <a href="navbar.html" class="list-group-item list-group-item-action">
+                        🧭 Navbar
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="modals.html" class="list-group-item list-group-item-action">
+                        🪟 Modals
+                        <span class="badge bg-warning rounded-pill float-end">Importante</span>
+                    </a>
+                    
+                    <a href="forms.html" class="list-group-item list-group-item-action">
+                        📋 Forms
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">INFORMACIÓN</small>
+                    </div>
+                    
+                    <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
+                        😎 Sobre el Autor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+                <div class="section-content">
+            <!-- Introducción -->
+            <div class="alert alert-info">
+                <h4>¿Qué son las Images en Bootstrap?</h4>
+                <p>Bootstrap proporciona clases para hacer que las imágenes sean responsivas y aplicar diferentes estilos visuales. Las imágenes se adaptan automáticamente al tamaño de su contenedor.</p>
+            </div>
+
+            <!-- Imagen Responsive -->
+            <h3 class="mt-4">1️⃣ Imagen Responsive (.img-fluid)</h3>
+            <p>Hace que la imagen sea responsiva. La imagen nunca será más grande que su contenedor padre.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;img src="imagen.jpg" class="img-fluid" alt="Descripción"&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplo Visual:</strong>
+                <img src="https://picsum.photos/1200/400?random=1" class="img-fluid" alt="Imagen responsive de ejemplo">
+                <p class="mt-2 text-muted">Redimensiona la ventana del navegador para ver cómo se adapta la imagen.</p>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Cuándo usar:</strong> Usa .img-fluid en todas las imágenes que quieras que se adapten al tamaño de la pantalla. Es especialmente útil para sitios responsive.
+            </div>
+
+            <!-- Imagen Redondeada -->
+            <h3 class="mt-5">2️⃣ Imagen con Bordes Redondeados (.rounded)</h3>
+            <p>Aplica bordes redondeados a la imagen.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;img src="imagen.jpg" class="rounded" alt="Descripción"&gt;</code></pre>
+            </div>
+
+            <div class="example-box text-center">
+                <strong>Ejemplo Visual:</strong>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-md-6">
+                        <img src="https://picsum.photos/400/300?random=2" class="rounded w-100" alt="Imagen con bordes redondeados">
+                        <p class="mt-2"><code>.rounded</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Variaciones de Rounded -->
+            <h3 class="mt-5">3️⃣ Variaciones de Bordes Redondeados</h3>
+            <p>Bootstrap ofrece diferentes niveles de redondeo:</p>
+
+            <div class="code-example">
+                <strong>Clases disponibles:</strong>
+                <ul>
+                    <li><code>.rounded-0</code> - Sin bordes redondeados</li>
+                    <li><code>.rounded-1</code> - Bordes ligeramente redondeados</li>
+                    <li><code>.rounded-2</code> - Bordes medianamente redondeados</li>
+                    <li><code>.rounded-3</code> - Bordes muy redondeados</li>
+                    <li><code>.rounded-circle</code> - Imagen circular perfecta</li>
+                    <li><code>.rounded-pill</code> - Bordes en forma de píldora</li>
+                </ul>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplos Visuales:</strong>
+                <div class="row text-center mt-3 g-3">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300/200?random=3" class="rounded-0 w-100" alt="Sin bordes">
+                        <p class="mt-2"><code>.rounded-0</code></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300/200?random=4" class="rounded-1 w-100" alt="Bordes ligeros">
+                        <p class="mt-2"><code>.rounded-1</code></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300/200?random=5" class="rounded-2 w-100" alt="Bordes medianos">
+                        <p class="mt-2"><code>.rounded-2</code></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300/200?random=6" class="rounded-3 w-100" alt="Bordes grandes">
+                        <p class="mt-2"><code>.rounded-3</code></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=7" class="rounded-circle" alt="Imagen circular" style="width: 200px; height: 200px; object-fit: cover;">
+                        <p class="mt-2"><code>.rounded-circle</code></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300/200?random=8" class="rounded-pill w-100" alt="Forma de píldora">
+                        <p class="mt-2"><code>.rounded-pill</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen Thumbnail -->
+            <h3 class="mt-5">4️⃣ Imagen Thumbnail (.img-thumbnail)</h3>
+            <p>Agrega un borde redondeado y padding a la imagen, dándole aspecto de miniatura.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;img src="imagen.jpg" class="img-thumbnail" alt="Descripción"&gt;</code></pre>
+            </div>
+
+            <div class="example-box text-center">
+                <strong>Ejemplo Visual:</strong>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-md-6">
+                        <img src="https://picsum.photos/400/300?random=9" class="img-thumbnail w-100" alt="Thumbnail">
+                        <p class="mt-2"><code>.img-thumbnail</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alineación de Imágenes -->
+            <h3 class="mt-5">5️⃣ Alineación de Imágenes</h3>
+            <p>Puedes alinear imágenes usando clases de utilidad de Bootstrap:</p>
+
+            <div class="code-example">
+                <strong>Clases de alineación:</strong>
+                <ul>
+                    <li><code>.float-start</code> - Alinea a la izquierda</li>
+                    <li><code>.float-end</code> - Alinea a la derecha</li>
+                    <li><code>.mx-auto</code> + <code>.d-block</code> - Centra la imagen</li>
+                </ul>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplos:</strong>
+                
+                <h5 class="mt-3">Float Start (Izquierda):</h5>
+                <div class="clearfix">
+                    <img src="https://picsum.photos/150/100?random=10" class="float-start me-3 rounded" alt="Alineada izquierda">
+                    <p>Este es un ejemplo de texto que fluye alrededor de una imagen alineada a la izquierda. La imagen tiene la clase .float-start y .me-3 para agregar margen derecho. El contenido del texto se envuelve naturalmente alrededor de la imagen, creando un diseño atractivo y profesional.</p>
+                </div>
+
+                <h5 class="mt-4">Float End (Derecha):</h5>
+                <div class="clearfix">
+                    <img src="https://picsum.photos/150/100?random=11" class="float-end ms-3 rounded" alt="Alineada derecha">
+                    <p>Este es un ejemplo de texto que fluye alrededor de una imagen alineada a la derecha. La imagen tiene la clase .float-end y .ms-3 para agregar margen izquierdo. El contenido del texto se adapta perfectamente al espacio disponible.</p>
+                </div>
+
+                <h5 class="mt-4">Centrada:</h5>
+                <img src="https://picsum.photos/400/200?random=12" class="d-block mx-auto rounded" alt="Centrada">
+                <p class="text-center mt-2">Imagen centrada con .d-block y .mx-auto</p>
+            </div>
+
+            <!-- Figuras -->
+            <h3 class="mt-5">6️⃣ Figuras con Caption (.figure)</h3>
+            <p>Usa el elemento <code>&lt;figure&gt;</code> para mostrar imágenes con pies de foto.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;figure class="figure"&gt;
+  &lt;img src="imagen.jpg" class="figure-img img-fluid rounded" alt="..."&gt;
+  &lt;figcaption class="figure-caption"&gt;
+    Descripción de la imagen
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplo Visual:</strong>
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure class="figure">
+                            <img src="https://picsum.photos/500/300?random=13" class="figure-img img-fluid rounded" alt="Figura con caption">
+                            <figcaption class="figure-caption">Una descripción de la imagen va aquí. Perfecto para añadir contexto.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <figure class="figure">
+                            <img src="https://picsum.photos/500/300?random=14" class="figure-img img-fluid rounded" alt="Figura con caption derecho">
+                            <figcaption class="figure-caption text-end">Caption alineado a la derecha usando .text-end</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galería de Imágenes -->
+            <h3 class="mt-5">7️⃣ Galería de Imágenes con Grid</h3>
+            <p>Combina las clases de imágenes con el sistema de grid para crear galerías.</p>
+
+            <div class="example-box">
+                <strong>Galería Responsive:</strong>
+                <div class="row g-3 mt-2">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=15" class="img-fluid rounded" alt="Galería 1">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=16" class="img-fluid rounded" alt="Galería 2">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=17" class="img-fluid rounded" alt="Galería 3">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=18" class="img-fluid rounded" alt="Galería 4">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=19" class="img-fluid rounded" alt="Galería 5">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=20" class="img-fluid rounded" alt="Galería 6">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=21" class="img-fluid rounded" alt="Galería 7">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="https://picsum.photos/300/200?random=22" class="img-fluid rounded" alt="Galería 8">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imágenes en Cards -->
+            <h3 class="mt-5">8️⃣ Imágenes en Cards</h3>
+            <p>Las imágenes se ven geniales dentro de componentes Card:</p>
+
+            <div class="example-box">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imagen paper/img-01.jpg" class="card-img-top" alt="Card 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de Card</h5>
+                                <p class="card-text">Ejemplo de imagen en la parte superior de un card.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/400/250?random=24" class="card-img-top" alt="Card 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de Card</h5>
+                                <p class="card-text">Imagen sin bordes redondeados en card.</p>
+                                <a href="#" class="btn btn-success">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/400/250?random=25" class="card-img-top" alt="Card 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de Card</h5>
+                                <p class="card-text">Otro ejemplo de card con imagen.</p>
+                                <a href="#" class="btn btn-info">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mejores Prácticas -->
+            <div class="card mt-5">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">✅ Mejores Prácticas</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>✅ Siempre usa <code>.img-fluid</code> para hacer imágenes responsivas</li>
+                        <li>✅ Agrega siempre el atributo <code>alt</code> para accesibilidad</li>
+                        <li>✅ Usa <code>.rounded-circle</code> para fotos de perfil</li>
+                        <li>✅ Combina <code>.img-thumbnail</code> para galerías de miniaturas</li>
+                        <li>✅ Optimiza el tamaño de las imágenes antes de subirlas</li>
+                        <li>✅ Usa formatos modernos como WebP para mejor rendimiento</li>
+                        <li>✅ Considera usar lazy loading para imágenes que no están en viewport</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="tables.html" class="btn btn-secondary">← Anterior: Tables</a>
+                <a href="buttons.html" class="btn btn-primary">Siguiente: Buttons →</a>
+            </div>
+        </div>
+    </div>
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

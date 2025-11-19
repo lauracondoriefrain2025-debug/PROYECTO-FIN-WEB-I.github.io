@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges - Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container main-container">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>🏷️ BADGES</h1>
+            <p class="lead">Etiquetas pequeñas para resaltar información</p>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    📚 Bootstrap 5
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tables.html">📊 Tables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="images.html">🖼️ Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buttons.html">🔘 Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="badges.html">🏷️ Badges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">📈 Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_groups.html">📝 List Groups</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="cards.html">🃏 Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collapse.html">📂 Collapse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="navbar.html">🧭 Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modals.html">🪟 Modals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">📋 Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">😎 Autor</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header bg-dark text-white">
+                <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="list-group list-group-flush">
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        🏠 <strong>Inicio</strong>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
+                    </div>
+                    
+                    <a href="containers.html" class="list-group-item list-group-item-action">
+                        📦 Containers
+                        <span class="badge bg-primary rounded-pill float-end">Básico</span>
+                    </a>
+                    
+                    <a href="tables.html" class="list-group-item list-group-item-action">
+                        📊 Tables
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="images.html" class="list-group-item list-group-item-action">
+                        🖼️ Images
+                    </a>
+                    
+                    <a href="buttons.html" class="list-group-item list-group-item-action">
+                        🔘 Buttons
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="badges.html" class="list-group-item list-group-item-action">
+                        🏷️ Badges
+                    </a>
+                    
+                    <a href="progress.html" class="list-group-item list-group-item-action">
+                        📈 Progress
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
+                    </div>
+                    
+                    <a href="list_groups.html" class="list-group-item list-group-item-action">
+                        📝 List Groups
+                    </a>
+                    
+                    <a href="cards.html" class="list-group-item list-group-item-action">
+                        🃏 Cards
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="collapse.html" class="list-group-item list-group-item-action">
+                        📂 Collapse
+                    </a>
+                    
+                    <a href="navbar.html" class="list-group-item list-group-item-action">
+                        🧭 Navbar
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="modals.html" class="list-group-item list-group-item-action">
+                        🪟 Modals
+                        <span class="badge bg-warning rounded-pill float-end">Importante</span>
+                    </a>
+                    
+                    <a href="forms.html" class="list-group-item list-group-item-action">
+                        📋 Forms
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">INFORMACIÓN</small>
+                    </div>
+                    
+                    <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
+                        😎 Sobre el Autor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="section-content">
+            <!-- Introducción -->
+            <div class="alert alert-info">
+                <h4>¿Qué son los Badges?</h4>
+                <p>Los badges son pequeños componentes de conteo y etiquetado. Son perfectos para mostrar
+                    notificaciones, estados, contadores y categorías de forma compacta y visual.</p>
+            </div>
+
+            <!-- Badges Básicos -->
+            <h3 class="mt-4">1️⃣ Badges Básicos</h3>
+            <p>Los badges se pueden usar con diferentes colores para indicar diferentes estados.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge bg-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Todos los Colores:</strong>
+                <div class="mt-3">
+                    <span class="badge bg-primary me-2 mb-2">Primary</span>
+                    <span class="badge bg-secondary me-2 mb-2">Secondary</span>
+                    <span class="badge bg-success me-2 mb-2">Success</span>
+                    <span class="badge bg-danger me-2 mb-2">Danger</span>
+                    <span class="badge bg-warning text-dark me-2 mb-2">Warning</span>
+                    <span class="badge bg-info text-dark me-2 mb-2">Info</span>
+                    <span class="badge bg-light text-dark me-2 mb-2">Light</span>
+                    <span class="badge bg-dark me-2 mb-2">Dark</span>
+                </div>
+            </div>
+
+            <!-- Badges en Encabezados -->
+            <h3 class="mt-5">2️⃣ Badges en Encabezados</h3>
+            <p>Los badges se escalan automáticamente al tamaño del elemento padre.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;h1&gt;Título &lt;span class="badge bg-primary"&gt;Nuevo&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Subtítulo &lt;span class="badge bg-success"&gt;v2.0&lt;/span&gt;&lt;/h2&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <h1>Encabezado H1 <span class="badge bg-primary">Nuevo</span></h1>
+                <h2>Encabezado H2 <span class="badge bg-success">Premium</span></h2>
+                <h3>Encabezado H3 <span class="badge bg-danger">Hot</span></h3>
+                <h4>Encabezado H4 <span class="badge bg-warning text-dark">Popular</span></h4>
+                <h5>Encabezado H5 <span class="badge bg-info text-dark">Beta</span></h5>
+                <h6>Encabezado H6 <span class="badge bg-dark">Pro</span></h6>
+            </div>
+
+            <!-- Badges Pill -->
+            <h3 class="mt-5">3️⃣ Badges Redondeados (.rounded-pill)</h3>
+            <p>Usa <code>.rounded-pill</code> para hacer badges con forma de píldora.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;span class="badge rounded-pill bg-primary"&gt;Primary&lt;/span&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Badges Pill:</strong>
+                <div class="mt-3">
+                    <span class="badge rounded-pill bg-primary me-2 mb-2">Primary</span>
+                    <span class="badge rounded-pill bg-secondary me-2 mb-2">Secondary</span>
+                    <span class="badge rounded-pill bg-success me-2 mb-2">Success</span>
+                    <span class="badge rounded-pill bg-danger me-2 mb-2">Danger</span>
+                    <span class="badge rounded-pill bg-warning text-dark me-2 mb-2">Warning</span>
+                    <span class="badge rounded-pill bg-info text-dark me-2 mb-2">Info</span>
+                    <span class="badge rounded-pill bg-light text-dark me-2 mb-2">Light</span>
+                    <span class="badge rounded-pill bg-dark me-2 mb-2">Dark</span>
+                </div>
+            </div>
+
+            <!-- Badges en Botones -->
+            <h3 class="mt-5">4️⃣ Badges en Botones</h3>
+            <p>Los badges son útiles para mostrar contadores de notificaciones en botones.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;button class="btn btn-primary"&gt;
+  Notificaciones &lt;span class="badge bg-danger"&gt;9&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <button class="btn btn-primary me-2 mb-2">
+                    Notificaciones <span class="badge bg-danger">9</span>
+                </button>
+                <button class="btn btn-success me-2 mb-2">
+                    Mensajes <span class="badge bg-light text-dark">4</span>
+                </button>
+                <button class="btn btn-secondary me-2 mb-2">
+                    Alertas <span class="badge bg-warning text-dark">12</span>
+                </button>
+                <button class="btn btn-info me-2 mb-2">
+                    Actualizaciones <span class="badge bg-dark">3</span>
+                </button>
+
+                <br><br>
+
+                <button class="btn btn-outline-primary me-2 mb-2">
+                    Inbox <span class="badge bg-primary">25</span>
+                </button>
+                <button class="btn btn-outline-success me-2 mb-2">
+                    Completados <span class="badge bg-success">100</span>
+                </button>
+            </div>
+
+            <!-- Badges como Contador -->
+            <h3 class="mt-5">5️⃣ Badges como Contadores</h3>
+            <p>Úsalos para mostrar cantidades, conteos o números.</p>
+
+            <div class="example-box">
+                <div class="d-flex justify-content-around mt-3">
+                    <div class="text-center">
+                        <h3>Usuarios</h3>
+                        <span class="badge rounded-pill bg-primary"
+                            style="font-size: 1.5rem; padding: 15px 25px;">1,234</span>
+                    </div>
+                    <div class="text-center">
+                        <h3>Ventas</h3>
+                        <span class="badge rounded-pill bg-success"
+                            style="font-size: 1.5rem; padding: 15px 25px;">$45K</span>
+                    </div>
+                    <div class="text-center">
+                        <h3>Pendientes</h3>
+                        <span class="badge rounded-pill bg-warning text-dark"
+                            style="font-size: 1.5rem; padding: 15px 25px;">87</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges en Listas -->
+            <h3 class="mt-5">6️⃣ Badges en List Groups</h3>
+            <p>Combina badges con listas para mostrar información adicional.</p>
+
+            <div class="example-box">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Bandeja de Entrada
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Mensajes Enviados
+                        <span class="badge bg-success rounded-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Borradores
+                        <span class="badge bg-warning rounded-pill">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Spam
+                        <span class="badge bg-danger rounded-pill">25</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Archivados
+                        <span class="badge bg-secondary rounded-pill">152</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Badges de Estado -->
+            <h3 class="mt-5">7️⃣ Badges de Estado</h3>
+            <p>Usa badges para indicar estados de elementos.</p>
+
+            <div class="example-box">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop HP</td>
+                            <td>$899</td>
+                            <td><span class="badge bg-success">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mouse Logitech</td>
+                            <td>$25</td>
+                            <td><span class="badge bg-warning text-dark">Pocos Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>Teclado Mecánico</td>
+                            <td>$120</td>
+                            <td><span class="badge bg-danger">Agotado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Monitor Dell</td>
+                            <td>$350</td>
+                            <td><span class="badge bg-info text-dark">Pre-orden</span></td>
+                        </tr>
+                        <tr>
+                            <td>Webcam HD</td>
+                            <td>$65</td>
+                            <td><span class="badge bg-secondary">Descontinuado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Badges con Iconos -->
+            <h3 class="mt-5">8️⃣ Badges con Iconos y Emojis</h3>
+            <p>Combina badges con iconos para mayor expresividad.</p>
+
+            <div class="example-box">
+                <strong>Con Emojis:</strong>
+                <div class="mt-3 mb-4">
+                    <span class="badge bg-success me-2 mb-2">✓ Verificado</span>
+                    <span class="badge bg-danger me-2 mb-2">✗ Rechazado</span>
+                    <span class="badge bg-warning text-dark me-2 mb-2">⚠ Advertencia</span>
+                    <span class="badge bg-info text-dark me-2 mb-2">ℹ Información</span>
+                    <span class="badge bg-primary me-2 mb-2">⭐ Premium</span>
+                    <span class="badge bg-secondary me-2 mb-2">🔒 Privado</span>
+                </div>
+
+                <strong>Estados con Iconos:</strong>
+                <div class="mt-3">
+                    <span class="badge rounded-pill bg-success me-2 mb-2">✓ Activo</span>
+                    <span class="badge rounded-pill bg-danger me-2 mb-2">● Offline</span>
+                    <span class="badge rounded-pill bg-warning text-dark me-2 mb-2">⏸ Pausado</span>
+                    <span class="badge rounded-pill bg-info text-dark me-2 mb-2">↻ Sincronizando</span>
+                </div>
+            </div>
+
+            <!-- Badges de Tamaño -->
+            <h3 class="mt-5">9️⃣ Diferentes Tamaños</h3>
+            <p>Ajusta el tamaño de los badges con estilos personalizados.</p>
+
+            <div class="example-box">
+                <span class="badge bg-primary me-2 mb-2" style="font-size: 0.7rem;">Pequeño</span>
+                <span class="badge bg-primary me-2 mb-2">Normal</span>
+                <span class="badge bg-primary me-2 mb-2" style="font-size: 1.2rem; padding: 8px 15px;">Grande</span>
+                <span class="badge bg-primary me-2 mb-2" style="font-size: 1.5rem; padding: 10px 20px;">Muy
+                    Grande</span>
+            </div>
+
+            <!-- Badges Interactivos -->
+            <h3 class="mt-5">🔟 Badges como Enlaces</h3>
+            <p>Convierte badges en enlaces clickeables.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;a href="#" class="badge bg-primary text-decoration-none"&gt;Badge Link&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <a href="#" class="badge bg-primary text-decoration-none me-2 mb-2">Primary Link</a>
+                <a href="#" class="badge bg-success text-decoration-none me-2 mb-2">Success Link</a>
+                <a href="#" class="badge bg-danger text-decoration-none me-2 mb-2">Danger Link</a>
+                <a href="#" class="badge bg-warning text-dark text-decoration-none me-2 mb-2">Warning Link</a>
+                <a href="#" class="badge bg-info text-dark text-decoration-none me-2 mb-2">Info Link</a>
+            </div>
+
+            <!-- Mejores Prácticas -->
+            <div class="card mt-5">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">✅ Mejores Prácticas</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>✅ Usa badges para mostrar contadores pequeños y notificaciones</li>
+                        <li>✅ Mantén el texto de los badges corto (1-3 palabras)</li>
+                        <li>✅ Usa colores consistentes para estados similares</li>
+                        <li>✅ Combina <code>.rounded-pill</code> con badges numéricos</li>
+                        <li>✅ Asegúrate de que los badges tengan buen contraste con el fondo</li>
+                        <li>✅ No abuses de los badges - úsalos solo cuando sea necesario</li>
+                        <li>✅ Considera usar <code>text-dark</code> en badges claros como warning y info</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="buttons.html" class="btn btn-secondary">← Anterior: Buttons</a>
+                <a href="progress.html" class="btn btn-primary">Siguiente: Progress →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

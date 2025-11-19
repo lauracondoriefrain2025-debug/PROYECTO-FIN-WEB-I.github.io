@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Bootstrap 5</title>
+ <link rel="stylesheet" href="css/bootstrap.css">
+
+<body>
+    <div class="container main-container">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>📋 FORMS</h1>
+            <p class="lead">Formularios elegantes con validación y controles personalizados</p>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    📚 Bootstrap 5
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tables.html">📊 Tables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="images.html">🖼️ Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buttons.html">🔘 Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="badges.html">🏷️ Badges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">📈 Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_groups.html">📝 List Groups</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="cards.html">🃏 Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collapse.html">📂 Collapse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="navbar.html">🧭 Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modals.html">🪟 Modals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">📋 Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">😎 Autor</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header bg-dark text-white">
+                <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="list-group list-group-flush">
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        🏠 <strong>Inicio</strong>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
+                    </div>
+                    
+                    <a href="containers.html" class="list-group-item list-group-item-action">
+                        📦 Containers
+                        <span class="badge bg-primary rounded-pill float-end">Básico</span>
+                    </a>
+                    
+                    <a href="tables.html" class="list-group-item list-group-item-action">
+                        📊 Tables
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="images.html" class="list-group-item list-group-item-action">
+                        🖼️ Images
+                    </a>
+                    
+                    <a href="buttons.html" class="list-group-item list-group-item-action">
+                        🔘 Buttons
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="badges.html" class="list-group-item list-group-item-action">
+                        🏷️ Badges
+                    </a>
+                    
+                    <a href="progress.html" class="list-group-item list-group-item-action">
+                        📈 Progress
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
+                    </div>
+                    
+                    <a href="list_groups.html" class="list-group-item list-group-item-action">
+                        📝 List Groups
+                    </a>
+                    
+                    <a href="cards.html" class="list-group-item list-group-item-action">
+                        🃏 Cards
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+                    
+                    <a href="collapse.html" class="list-group-item list-group-item-action">
+                        📂 Collapse
+                    </a>
+                    
+                    <a href="navbar.html" class="list-group-item list-group-item-action">
+                        🧭 Navbar
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <a href="modals.html" class="list-group-item list-group-item-action">
+                        🪟 Modals
+                        <span class="badge bg-warning rounded-pill float-end">Importante</span>
+                    </a>
+                    
+                    <a href="forms.html" class="list-group-item list-group-item-action">
+                        📋 Forms
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+                    
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">INFORMACIÓN</small>
+                    </div>
+                    
+                    <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
+                        😎 Sobre el Autor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contenido -->
+        <div class="section-content">
+            <!-- Introducción -->
+            <div class="alert alert-info">
+                <h4>¿Qué son los Forms?</h4>
+                <p>Los formularios de Bootstrap proporcionan estilos elegantes para todos los controles de entrada, con soporte para validación, tamaños personalizados y layouts flexibles.</p>
+            </div>
+
+            <!-- Formulario Básico -->
+            <h3 class="mt-4">1️⃣ Formulario Básico</h3>
+            <p>Elementos básicos de un formulario con inputs, labels y botón.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;form&gt;
+  &lt;div class="mb-3"&gt;
+    &lt;label class="form-label"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="form-control"&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="tu@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Form Controls -->
+            <h3 class="mt-5">2️⃣ Diferentes Tipos de Inputs</h3>
+            <p>Bootstrap estiliza todos los tipos de input HTML5.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Input de Texto</label>
+                        <input type="text" class="form-control" placeholder="Texto normal">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="ejemplo@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número</label>
+                        <input type="number" class="form-control" placeholder="123">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Color</label>
+                        <input type="color" class="form-control form-control-color" value="#667eea">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Archivo</label>
+                        <input type="file" class="form-control">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Textarea y Select -->
+            <h3 class="mt-5">3️⃣ Textarea y Select</h3>
+            <p>Controles para textos largos y selección de opciones.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <div class="form-text">Máximo 500 caracteres</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">País</label>
+                        <select class="form-select">
+                            <option selected>Selecciona un país</option>
+                            <option value="1">Bolivia</option>
+                            <option value="2">Perú</option>
+                            <option value="3">Argentina</option>
+                            <option value="4">Chile</option>
+                            <option value="5">Brasil</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Select Múltiple</label>
+                        <select class="form-select" multiple>
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                            <option>Opción 4</option>
+                            <option>Opción 5</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Checkboxes y Radios -->
+            <h3 class="mt-5">4️⃣ Checkboxes y Radio Buttons</h3>
+            <p>Controles para selecciones múltiples o únicas.</p>
+
+            <div class="example-box">
+                <form>
+                    <h6>Checkboxes:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" checked>
+                        <label class="form-check-label" for="check1">
+                            Opción 1 (marcada por defecto)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check2">
+                        <label class="form-check-label" for="check2">
+                            Opción 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check3" disabled>
+                        <label class="form-check-label" for="check3">
+                            Opción 3 (deshabilitada)
+                        </label>
+                    </div>
+
+                    <h6 class="mt-4">Radio Buttons:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioOptions" id="radio1" checked>
+                        <label class="form-check-label" for="radio1">
+                            Opción A (seleccionada)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioOptions" id="radio2">
+                        <label class="form-check-label" for="radio2">
+                            Opción B
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioOptions" id="radio3" disabled>
+                        <label class="form-check-label" for="radio3">
+                            Opción C (deshabilitada)
+                        </label>
+                    </div>
+
+                    <h6 class="mt-4">Switches:</h6>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="switch1" checked>
+                        <label class="form-check-label" for="switch1">Activar notificaciones</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="switch2">
+                        <label class="form-check-label" for="switch2">Modo oscuro</label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Range -->
+            <h3 class="mt-5">5️⃣ Range (Control Deslizante)</h3>
+            <p>Control para seleccionar valores dentro de un rango.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Volumen: <span id="volumeValue">50</span></label>
+                        <input type="range" class="form-range" min="0" max="100" value="50" id="volumeRange" oninput="document.getElementById('volumeValue').textContent = this.value">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Calidad: <span id="qualityValue">75</span>%</label>
+                        <input type="range" class="form-range" min="0" max="100" value="75" step="25" id="qualityRange" oninput="document.getElementById('qualityValue').textContent = this.value">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tamaños de Inputs -->
+            <h3 class="mt-5">6️⃣ Tamaños de Inputs</h3>
+            <p>Usa <code>.form-control-lg</code> y <code>.form-control-sm</code> para diferentes tamaños.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Input Grande">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Input Normal">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Input Pequeño">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select form-select-lg">
+                            <option>Select Grande</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>Select Normal</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select form-select-sm">
+                            <option>Select Pequeño</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Input Groups -->
+            <h3 class="mt-5">7️⃣ Input Groups (Grupos de Entrada)</h3>
+            <p>Agrega texto, botones o dropdowns antes o después de inputs.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Usuario</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="usuario">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="nombre">
+                            <span class="input-group-text">@incoslapaz.org</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Precio</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Bs.</span>
+                            <input type="number" class="form-control" placeholder="0.00">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Búsqueda con Botón</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar...">
+                            <button class="btn btn-primary" type="button">🔍 Buscar</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Con Dropdown</label>
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Filtro
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Todo</a></li>
+                                <li><a class="dropdown-item" href="#">Activos</a></li>
+                                <li><a class="dropdown-item" href="#">Inactivos</a></li>
+                            </ul>
+                            <input type="text" class="form-control" placeholder="Buscar...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Validación -->
+            <h3 class="mt-5">8️⃣ Validación de Formularios</h3>
+            <p>Bootstrap proporciona estilos de validación con las clases <code>.was-validated</code>, <code>.is-valid</code> y <code>.is-invalid</code>.</p>
+
+            <div class="example-box">
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" required>
+                        <div class="valid-feedback">¡Se ve bien!</div>
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" required>
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Edad <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control" min="18" max="100" required>
+                        <div class="invalid-feedback">Debes ser mayor de 18 años.</div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="validationCheck" required>
+                            <label class="form-check-label" for="validationCheck">
+                                Acepto los términos y condiciones
+                            </label>
+                            <div class="invalid-feedback">Debes aceptar los términos.</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+                </form>
+            </div>
+
+            <!-- Formulario Horizontal -->
+            <h3 class="mt-5">9️⃣ Formulario Horizontal</h3>
+            <p>Usa el sistema de grid para layouts horizontales.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" placeholder="tu@email.com">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Contraseña</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-9 offset-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remember">
+                                <label class="form-check-label" for="remember">
+                                    Recordarme
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-9 offset-sm-3">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Formulario Inline -->
+            <h3 class="mt-5">🔟 Formulario Inline</h3>
+            <p>Todos los elementos en una misma línea horizontal.</p>
+
+            <div class="example-box">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <label class="visually-hidden">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-12">
+                        <label class="visually-hidden">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="remember2">
+                            <label class="form-check-label" for="remember2">
+                                Recordar
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Floating Labels -->
+            <h3 class="mt-5">1️⃣1️⃣ Floating Labels</h3>
+            <p>Labels que flotan sobre los inputs cuando estos tienen contenido.</p>
+
+            <div class="example-box">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                        <label for="floatingTextarea">Comentario</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect">
+                            <option selected>Selecciona una opción</option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                        <label for="floatingSelect">Selección</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Mejores Prácticas -->
+            <div class="card mt-5">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">✅ Mejores Prácticas</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>✅ Siempre usa labels para todos los inputs (accesibilidad)</li>
+                        <li>✅ Agrega texto de ayuda con <code>.form-text</code> cuando sea necesario</li>
+                        <li>✅ Implementa validación tanto en el cliente como en el servidor</li>
+                        <li>✅ Usa placeholders descriptivos pero no como reemplazo de labels</li>
+                        <li>✅ Marca los campos requeridos claramente</li>
+                        <li>✅ Agrupa campos relacionados lógicamente</li>
+                        <li>✅ Usa el tipo de input apropiado para cada campo</li>
+                        <li>✅ Proporciona feedback claro en errores de validación</li>
+                        <li>✅ Mantén los formularios lo más simples posible</li>
+                        <li>✅ Usa floating labels para diseños modernos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navegación Final -->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="modals.html" class="btn btn-secondary">← Anterior: Modals</a>
+                <a href="index.html" class="btn btn-success">🏠 Volver al Inicio</a>
+            </div>
+
+            <!-- Mensaje Final -->
+            <div class="alert alert-success mt-4">
+                <h4 class="alert-heading">🎉 ¡Felicitaciones!</h4>
+                <p>Has completado el tutorial de Bootstrap 5. Ahora conoces todos los componentes principales y estás listo para crear sitios web increíbles.</p>
+                <hr>
+                <p class="mb-0">💡 <strong>Próximos pasos:</strong> Practica combinando estos componentes en proyectos reales.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación de formularios
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
