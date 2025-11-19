@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables - Bootstrap 5</title>
-     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
@@ -19,7 +19,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
                     📚 Bootstrap 5
                 </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -29,6 +30,9 @@
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="containers.html">📦 Containers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tables.html">📊 Tables</a>
@@ -47,7 +51,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="list_groups.html">📝 List Groups</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cards.html">🃏 Cards</a>
                         </li>
@@ -65,13 +69,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre">😎 Autor</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<!-- offcanvas -->
+        <!-- offcanvas -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
             <div class="offcanvas-header bg-dark text-white">
                 <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
@@ -82,74 +86,74 @@
                     <a href="index.html" class="list-group-item list-group-item-action active">
                         🏠 <strong>Inicio</strong>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
                     </div>
-                    
+
                     <a href="containers.html" class="list-group-item list-group-item-action">
                         📦 Containers
                         <span class="badge bg-primary rounded-pill float-end">Básico</span>
                     </a>
-                    
+
                     <a href="tables.html" class="list-group-item list-group-item-action">
                         📊 Tables
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="images.html" class="list-group-item list-group-item-action">
                         🖼️ Images
                     </a>
-                    
+
                     <a href="buttons.html" class="list-group-item list-group-item-action">
                         🔘 Buttons
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="badges.html" class="list-group-item list-group-item-action">
                         🏷️ Badges
                     </a>
-                    
+
                     <a href="progress.html" class="list-group-item list-group-item-action">
                         📈 Progress
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
                     </div>
-                    
+
                     <a href="list_groups.html" class="list-group-item list-group-item-action">
                         📝 List Groups
                     </a>
-                    
+
                     <a href="cards.html" class="list-group-item list-group-item-action">
                         🃏 Cards
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="collapse.html" class="list-group-item list-group-item-action">
                         📂 Collapse
                     </a>
-                    
+
                     <a href="navbar.html" class="list-group-item list-group-item-action">
                         🧭 Navbar
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="modals.html" class="list-group-item list-group-item-action">
                         🪟 Modals
                         <span class="badge bg-warning rounded-pill float-end">Importante</span>
                     </a>
-                    
+
                     <a href="forms.html" class="list-group-item list-group-item-action">
                         📋 Forms
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">INFORMACIÓN</small>
                     </div>
-                    
+
                     <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
                         😎 Sobre el Autor
                     </a>
@@ -163,7 +167,8 @@
             <!-- Introducción -->
             <div class="alert alert-info">
                 <h4>¿Qué son las Tables?</h4>
-                <p>Las tablas de Bootstrap permiten mostrar datos de forma estructurada y organizada. Bootstrap proporciona estilos predefinidos que hacen que las tablas sean atractivas y fáciles de leer.</p>
+                <p>Las tablas de Bootstrap permiten mostrar datos de forma estructurada y organizada. Bootstrap
+                    proporciona estilos predefinidos que hacen que las tablas sean atractivas y fáciles de leer.</p>
             </div>
 
             <!-- Tabla Básica -->
@@ -572,8 +577,10 @@
                         <li>✅ Combina <code>.table-striped</code> con <code>.table-hover</code> para mejor UX</li>
                         <li>✅ Usa <code>.table-sm</code> cuando tengas muchos datos que mostrar</li>
                         <li>✅ Utiliza colores contextuales para resaltar información importante</li>
-                        <li>✅ Siempre usa <code>&lt;thead&gt;</code> y <code>&lt;tbody&gt;</code> para mejor estructura</li>
-                        <li>✅ Considera agregar <code>.text-center</code> o <code>.text-end</code> en celdas numéricas</li>
+                        <li>✅ Siempre usa <code>&lt;thead&gt;</code> y <code>&lt;tbody&gt;</code> para mejor estructura
+                        </li>
+                        <li>✅ Considera agregar <code>.text-center</code> o <code>.text-end</code> en celdas numéricas
+                        </li>
                     </ul>
                 </div>
             </div>

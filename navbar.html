@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar - Bootstrap 5</title>
-     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
@@ -19,7 +19,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
                     📚 Bootstrap 5
                 </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -29,6 +30,9 @@
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="containers.html">📦 Containers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tables.html">📊 Tables</a>
@@ -47,7 +51,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="list_groups.html">📝 List Groups</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cards.html">🃏 Cards</a>
                         </li>
@@ -65,13 +69,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre">😎 Autor</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<!-- offcanvas -->
+        <!-- offcanvas -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
             <div class="offcanvas-header bg-dark text-white">
                 <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
@@ -82,74 +86,74 @@
                     <a href="index.html" class="list-group-item list-group-item-action active">
                         🏠 <strong>Inicio</strong>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
                     </div>
-                    
+
                     <a href="containers.html" class="list-group-item list-group-item-action">
                         📦 Containers
                         <span class="badge bg-primary rounded-pill float-end">Básico</span>
                     </a>
-                    
+
                     <a href="tables.html" class="list-group-item list-group-item-action">
                         📊 Tables
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="images.html" class="list-group-item list-group-item-action">
                         🖼️ Images
                     </a>
-                    
+
                     <a href="buttons.html" class="list-group-item list-group-item-action">
                         🔘 Buttons
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="badges.html" class="list-group-item list-group-item-action">
                         🏷️ Badges
                     </a>
-                    
+
                     <a href="progress.html" class="list-group-item list-group-item-action">
                         📈 Progress
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
                     </div>
-                    
+
                     <a href="list_groups.html" class="list-group-item list-group-item-action">
                         📝 List Groups
                     </a>
-                    
+
                     <a href="cards.html" class="list-group-item list-group-item-action">
                         🃏 Cards
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="collapse.html" class="list-group-item list-group-item-action">
                         📂 Collapse
                     </a>
-                    
+
                     <a href="navbar.html" class="list-group-item list-group-item-action">
                         🧭 Navbar
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="modals.html" class="list-group-item list-group-item-action">
                         🪟 Modals
                         <span class="badge bg-warning rounded-pill float-end">Importante</span>
                     </a>
-                    
+
                     <a href="forms.html" class="list-group-item list-group-item-action">
                         📋 Forms
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">INFORMACIÓN</small>
                     </div>
-                    
+
                     <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
                         😎 Sobre el Autor
                     </a>
@@ -163,7 +167,8 @@
             <!-- Introducción -->
             <div class="alert alert-info">
                 <h4>¿Qué es el Navbar?</h4>
-                <p>El navbar (barra de navegación) es uno de los componentes más importantes de Bootstrap. Proporciona una navegación responsiva y adaptable que colapsa automáticamente en dispositivos móviles.</p>
+                <p>El navbar (barra de navegación) es uno de los componentes más importantes de Bootstrap. Proporciona
+                    una navegación responsiva y adaptable que colapsa automáticamente en dispositivos móviles.</p>
             </div>
 
             <!-- Navbar Básico -->
@@ -211,7 +216,8 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">🚀 MiApp</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample1">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarExample1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarExample1">
@@ -232,7 +238,8 @@
                         </div>
                     </div>
                 </nav>
-                <p class="mt-2 text-muted"><small>Redimensiona la ventana para ver el comportamiento responsive</small></p>
+                <p class="mt-2 text-muted"><small>Redimensiona la ventana para ver el comportamiento responsive</small>
+                </p>
             </div>
 
             <!-- Navbar con Colores -->
@@ -293,7 +300,8 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">💼 Portal</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarDropdown">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarDropdown">
@@ -308,7 +316,9 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Producto A</a></li>
                                         <li><a class="dropdown-item" href="#">Producto B</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="#">Todos los productos</a></li>
                                     </ul>
                                 </li>
@@ -339,7 +349,8 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">🔍 Buscador</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSearch">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSearch">
@@ -368,7 +379,8 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">✨ MiApp Pro</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtons">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarButtons">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarButtons">
@@ -407,7 +419,8 @@
 
             <div class="example-box">
                 <div class="alert alert-warning">
-                    <strong>Nota:</strong> Los navbars fixed se salen del flujo normal del documento. Asegúrate de agregar padding al body para evitar que el contenido quede oculto debajo del navbar.
+                    <strong>Nota:</strong> Los navbars fixed se salen del flujo normal del documento. Asegúrate de
+                    agregar padding al body para evitar que el contenido quede oculto debajo del navbar.
                 </div>
                 <pre><code>&lt;nav class="navbar fixed-top navbar-dark bg-dark"&gt;
   ...
@@ -450,7 +463,8 @@
                 <nav class="navbar navbar-dark bg-warning">
                     <div class="container-fluid">
                         <a class="navbar-brand text-dark" href="#">📱 Mobile First</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
@@ -490,9 +504,11 @@
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>✅ Siempre incluye <code>.navbar-expand-{breakpoint}</code> para el comportamiento responsive</li>
+                        <li>✅ Siempre incluye <code>.navbar-expand-{breakpoint}</code> para el comportamiento responsive
+                        </li>
                         <li>✅ Usa <code>.navbar-toggler</code> para el botón hamburguesa en móviles</li>
-                        <li>✅ Combina <code>.navbar-dark</code> con fondos oscuros y <code>.navbar-light</code> con fondos claros</li>
+                        <li>✅ Combina <code>.navbar-dark</code> con fondos oscuros y <code>.navbar-light</code> con
+                            fondos claros</li>
                         <li>✅ Usa <code>.sticky-top</code> en lugar de <code>.fixed-top</code> para mejor UX</li>
                         <li>✅ Mantén el navbar simple - no sobrecargues con demasiadas opciones</li>
                         <li>✅ Asegúrate de que el navbar sea accesible en dispositivos móviles</li>
@@ -510,7 +526,7 @@
         </div>
     </div>
 
-   <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

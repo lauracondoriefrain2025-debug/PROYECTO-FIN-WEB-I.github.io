@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers - Bootstrap 5</title>
+ <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container main-container">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>📦 CONTAINERS</h1>
+            <p class="lead">Elementos contenedores responsivos de Bootstrap 5</p>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    📚 Bootstrap 5
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tables.html">📊 Tables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="containers.html">📦 Containers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="images.html">🖼️ Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buttons.html">🔘 Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="badges.html">🏷️ Badges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">📈 Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_groups.html">📝 List Groups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cards.html">🃏 Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collapse.html">📂 Collapse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="navbar.html">🧭 Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modals.html">🪟 Modals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">📋 Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">😎 Autor</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header bg-dark text-white">
+                <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="list-group list-group-flush">
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        🏠 <strong>Inicio</strong>
+                    </a>
+
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
+                    </div>
+
+                    <a href="containers.html" class="list-group-item list-group-item-action">
+                        📦 Containers
+                        <span class="badge bg-primary rounded-pill float-end">Básico</span>
+                    </a>
+
+                    <a href="tables.html" class="list-group-item list-group-item-action">
+                        📊 Tables
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+
+                    <a href="images.html" class="list-group-item list-group-item-action">
+                        🖼️ Images
+                    </a>
+
+                    <a href="buttons.html" class="list-group-item list-group-item-action">
+                        🔘 Buttons
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+
+                    <a href="badges.html" class="list-group-item list-group-item-action">
+                        🏷️ Badges
+                    </a>
+
+                    <a href="progress.html" class="list-group-item list-group-item-action">
+                        📈 Progress
+                    </a>
+
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
+                    </div>
+
+                    <a href="list_groups.html" class="list-group-item list-group-item-action">
+                        📝 List Groups
+                    </a>
+
+                    <a href="cards.html" class="list-group-item list-group-item-action">
+                        🃏 Cards
+                        <span class="badge bg-success rounded-pill float-end">Popular</span>
+                    </a>
+
+                    <a href="collapse.html" class="list-group-item list-group-item-action">
+                        📂 Collapse
+                    </a>
+
+                    <a href="navbar.html" class="list-group-item list-group-item-action">
+                        🧭 Navbar
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+
+                    <a href="modals.html" class="list-group-item list-group-item-action">
+                        🪟 Modals
+                        <span class="badge bg-warning rounded-pill float-end">Importante</span>
+                    </a>
+
+                    <a href="forms.html" class="list-group-item list-group-item-action">
+                        📋 Forms
+                        <span class="badge bg-danger rounded-pill float-end">Esencial</span>
+                    </a>
+
+                    <div class="list-group-item bg-light">
+                        <small class="text-muted fw-bold">INFORMACIÓN</small>
+                    </div>
+
+                    <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
+                        😎 Sobre el Autor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="section-content">
+            <!-- Introducción -->
+            <div class="alert alert-info">
+                <h4>¿Qué son los Containers?</h4>
+                <p>Los containers son el elemento de diseño más básico de Bootstrap. Son necesarios cuando usas el sistema de grid por defecto. Los containers se usan para contener, rellenar y alinear el contenido dentro de un dispositivo dado.</p>
+            </div>
+
+            <!-- Tipo 1: Container Normal -->
+            <h3 class="mt-4">1️⃣ Container Normal (.container)</h3>
+            <p>El container normal tiene un ancho máximo que cambia según el tamaño de la pantalla (responsive).</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;div class="container"&gt;
+  Contenido aquí...
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplo Visual:</strong>
+                <div class="container demo-container bg-primary text-white">
+                    .container - Ancho responsivo con márgenes automáticos
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Cuándo usar:</strong> Úsalo cuando quieres que tu contenido tenga márgenes a los lados y no ocupe todo el ancho de la pantalla.
+            </div>
+
+            <!-- Tipo 2: Container Fluid -->
+            <h3 class="mt-5">2️⃣ Container Fluid (.container-fluid)</h3>
+            <p>El container fluid ocupa el 100% del ancho disponible en todos los tamaños de pantalla.</p>
+
+            <div class="code-example">
+                <strong>Código:</strong>
+                <pre><code>&lt;div class="container-fluid"&gt;
+  Contenido aquí...
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplo Visual:</strong>
+                <div class="container-fluid demo-container bg-success text-white">
+                    .container-fluid - Ancho completo 100%
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>💡 Cuándo usar:</strong> Úsalo cuando quieres que tu contenido ocupe todo el ancho de la pantalla sin márgenes laterales.
+            </div>
+
+            <!-- Tipo 3: Container con Breakpoints -->
+            <h3 class="mt-5">3️⃣ Container con Breakpoints</h3>
+            <p>Puedes hacer que el container sea fluid hasta un cierto tamaño de pantalla:</p>
+
+            <div class="code-example">
+                <strong>Opciones disponibles:</strong>
+                <ul>
+                    <li><code>.container-sm</code> - Fluid hasta small (576px)</li>
+                    <li><code>.container-md</code> - Fluid hasta medium (768px)</li>
+                    <li><code>.container-lg</code> - Fluid hasta large (992px)</li>
+                    <li><code>.container-xl</code> - Fluid hasta extra large (1200px)</li>
+                    <li><code>.container-xxl</code> - Fluid hasta extra extra large (1400px)</li>
+                </ul>
+            </div>
+
+            <div class="example-box">
+                <strong>Ejemplos Visuales:</strong>
+                <div class="container-sm demo-container bg-info text-white mb-2">
+                    .container-sm - Fluid hasta SM (576px)
+                </div>
+                <div class="container-md demo-container bg-warning text-dark mb-2">
+                    .container-md - Fluid hasta MD (768px)
+                </div>
+                <div class="container-lg demo-container bg-danger text-white mb-2">
+                    .container-lg - Fluid hasta LG (992px)
+                </div>
+            </div>
+
+            <!-- Tabla Comparativa -->
+            <h3 class="mt-5">📊 Tabla Comparativa de Anchos Máximos</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Clase</th>
+                            <th>Extra Small<br>&lt;576px</th>
+                            <th>Small<br>≥576px</th>
+                            <th>Medium<br>≥768px</th>
+                            <th>Large<br>≥992px</th>
+                            <th>X-Large<br>≥1200px</th>
+                            <th>XX-Large<br>≥1400px</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>.container</code></td>
+                            <td>100%</td>
+                            <td>540px</td>
+                            <td>720px</td>
+                            <td>960px</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-sm</code></td>
+                            <td>100%</td>
+                            <td>540px</td>
+                            <td>720px</td>
+                            <td>960px</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-md</code></td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>720px</td>
+                            <td>960px</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-lg</code></td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>960px</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-xl</code></td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>1140px</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-xxl</code></td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>1320px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.container-fluid</code></td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Ejemplo Práctico -->
+            <h3 class="mt-5">💻 Ejemplo Práctico Completo</h3>
+            <div class="code-example">
+                <pre><code>&lt;!-- Container normal con contenido --&gt;
+&lt;div class="container"&gt;
+  &lt;h1&gt;Mi Sitio Web&lt;/h1&gt;
+  &lt;p&gt;Este contenido está dentro de un container.&lt;/p&gt;
+  
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-6"&gt;Columna 1&lt;/div&gt;
+    &lt;div class="col-md-6"&gt;Columna 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <!-- Mejores Prácticas -->
+            <div class="card mt-4">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">✅ Mejores Prácticas</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>✅ Usa <code>.container</code> para sitios web estándar con contenido centrado</li>
+                        <li>✅ Usa <code>.container-fluid</code> para dashboards o aplicaciones que necesitan usar todo el ancho</li>
+                        <li>✅ No anides containers dentro de otros containers</li>
+                        <li>✅ Los containers son el primer elemento dentro del <code>&lt;body&gt;</code> generalmente</li>
+                        <li>✅ Usa containers con el sistema de grid (row y col) para layouts responsivos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="index.html" class="btn btn-secondary">← Volver al Índice</a>
+                <a href="tables.html" class="btn btn-primary">Siguiente: Tables →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

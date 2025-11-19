@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms - Bootstrap 5</title>
- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
 <body>
     <div class="container main-container">
@@ -18,7 +18,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <button class="navbar-brand btn btn-link text-white text-decoration-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
                     📚 Bootstrap 5
                 </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -28,6 +29,9 @@
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">🏠 Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="containers.html">📦 Containers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tables.html">📊 Tables</a>
@@ -46,7 +50,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="list_groups.html">📝 List Groups</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cards.html">🃏 Cards</a>
                         </li>
@@ -64,13 +68,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre">😎 Autor</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<!-- offcanvas -->
+        <!-- offcanvas -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
             <div class="offcanvas-header bg-dark text-white">
                 <h5 class="offcanvas-title">📚 Índice de Componentes</h5>
@@ -81,74 +85,74 @@
                     <a href="index.html" class="list-group-item list-group-item-action active">
                         🏠 <strong>Inicio</strong>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES BÁSICOS</small>
                     </div>
-                    
+
                     <a href="containers.html" class="list-group-item list-group-item-action">
                         📦 Containers
                         <span class="badge bg-primary rounded-pill float-end">Básico</span>
                     </a>
-                    
+
                     <a href="tables.html" class="list-group-item list-group-item-action">
                         📊 Tables
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="images.html" class="list-group-item list-group-item-action">
                         🖼️ Images
                     </a>
-                    
+
                     <a href="buttons.html" class="list-group-item list-group-item-action">
                         🔘 Buttons
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="badges.html" class="list-group-item list-group-item-action">
                         🏷️ Badges
                     </a>
-                    
+
                     <a href="progress.html" class="list-group-item list-group-item-action">
                         📈 Progress
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">COMPONENTES AVANZADOS</small>
                     </div>
-                    
+
                     <a href="list_groups.html" class="list-group-item list-group-item-action">
                         📝 List Groups
                     </a>
-                    
+
                     <a href="cards.html" class="list-group-item list-group-item-action">
                         🃏 Cards
                         <span class="badge bg-success rounded-pill float-end">Popular</span>
                     </a>
-                    
+
                     <a href="collapse.html" class="list-group-item list-group-item-action">
                         📂 Collapse
                     </a>
-                    
+
                     <a href="navbar.html" class="list-group-item list-group-item-action">
                         🧭 Navbar
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <a href="modals.html" class="list-group-item list-group-item-action">
                         🪟 Modals
                         <span class="badge bg-warning rounded-pill float-end">Importante</span>
                     </a>
-                    
+
                     <a href="forms.html" class="list-group-item list-group-item-action">
                         📋 Forms
                         <span class="badge bg-danger rounded-pill float-end">Esencial</span>
                     </a>
-                    
+
                     <div class="list-group-item bg-light">
                         <small class="text-muted fw-bold">INFORMACIÓN</small>
                     </div>
-                    
+
                     <a href="#sobre" class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas">
                         😎 Sobre el Autor
                     </a>
@@ -162,7 +166,8 @@
             <!-- Introducción -->
             <div class="alert alert-info">
                 <h4>¿Qué son los Forms?</h4>
-                <p>Los formularios de Bootstrap proporcionan estilos elegantes para todos los controles de entrada, con soporte para validación, tamaños personalizados y layouts flexibles.</p>
+                <p>Los formularios de Bootstrap proporcionan estilos elegantes para todos los controles de entrada, con
+                    soporte para validación, tamaños personalizados y layouts flexibles.</p>
             </div>
 
             <!-- Formulario Básico -->
@@ -336,11 +341,13 @@
                 <form>
                     <div class="mb-3">
                         <label class="form-label">Volumen: <span id="volumeValue">50</span></label>
-                        <input type="range" class="form-range" min="0" max="100" value="50" id="volumeRange" oninput="document.getElementById('volumeValue').textContent = this.value">
+                        <input type="range" class="form-range" min="0" max="100" value="50" id="volumeRange"
+                            oninput="document.getElementById('volumeValue').textContent = this.value">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Calidad: <span id="qualityValue">75</span>%</label>
-                        <input type="range" class="form-range" min="0" max="100" value="75" step="25" id="qualityRange" oninput="document.getElementById('qualityValue').textContent = this.value">
+                        <input type="range" class="form-range" min="0" max="100" value="75" step="25" id="qualityRange"
+                            oninput="document.getElementById('qualityValue').textContent = this.value">
                     </div>
                 </form>
             </div>
@@ -416,7 +423,8 @@
                     <div class="mb-3">
                         <label class="form-label">Con Dropdown</label>
                         <div class="input-group">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
                                 Filtro
                             </button>
                             <ul class="dropdown-menu">
@@ -432,7 +440,8 @@
 
             <!-- Validación -->
             <h3 class="mt-5">8️⃣ Validación de Formularios</h3>
-            <p>Bootstrap proporciona estilos de validación con las clases <code>.was-validated</code>, <code>.is-valid</code> y <code>.is-invalid</code>.</p>
+            <p>Bootstrap proporciona estilos de validación con las clases <code>.was-validated</code>,
+                <code>.is-valid</code> y <code>.is-invalid</code>.</p>
 
             <div class="example-box">
                 <form class="needs-validation" novalidate>
@@ -548,7 +557,8 @@
                         <label for="floatingPassword">Contraseña</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                            style="height: 100px"></textarea>
                         <label for="floatingTextarea">Comentario</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -594,9 +604,11 @@
             <!-- Mensaje Final -->
             <div class="alert alert-success mt-4">
                 <h4 class="alert-heading">🎉 ¡Felicitaciones!</h4>
-                <p>Has completado el tutorial de Bootstrap 5. Ahora conoces todos los componentes principales y estás listo para crear sitios web increíbles.</p>
+                <p>Has completado el tutorial de Bootstrap 5. Ahora conoces todos los componentes principales y estás
+                    listo para crear sitios web increíbles.</p>
                 <hr>
-                <p class="mb-0">💡 <strong>Próximos pasos:</strong> Practica combinando estos componentes en proyectos reales.</p>
+                <p class="mb-0">💡 <strong>Próximos pasos:</strong> Practica combinando estos componentes en proyectos
+                    reales.</p>
             </div>
         </div>
     </div>
